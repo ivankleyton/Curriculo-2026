@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Ivan Kleyton Campelo Ferreira</title>
+    <style>
+        :root {
+            --primary: #0f172a;    /* Azul escuro moderno */
+            --accent: #2563eb;     /* Azul destaque tech */
+            --text: #334155;       /* Cinza para leitura confortável */
+            --text-dark: #1e293b;  /* Cinza escuro para títulos */
+            --bg-light: #f8fafc;   /* Fundo sutil para divisões */
+            --border: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.5;
+            color: var(--text);
+            background-color: #ffffff;
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Cabeçalho Minimalista e Imponente */
+        header {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .header-main h1 {
+            font-size: 26px;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .header-main .subtitle {
+            font-size: 14px;
+            color: var(--accent);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contato {
+            font-size: 12px;
+            color: var(--text);
+            text-align: right;
+            line-height: 1.6;
+        }
+
+        .contato a {
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        /* Estrutura de Seções */
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 14px;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::after {
+            content: '';
+            flex: 1;
+            margin-left: 15px;
+            height: 1px;
+            background-color: var(--border);
+        }
+
+        p {
+            font-size: 13px;
+            text-align: justify;
+            color: var(--text);
+        }
+
+        /* Experiências e Formação */
+        .item-cronologico {
+            margin-bottom: 16px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .cargo-curso {
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--text-dark);
+        }
+
+        .empresa-instituicao {
+            font-size: 13px;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 6px;
+        }
+
+        .periodo {
+            font-size: 12px;
+            color: #64748b;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        ul {
+            padding-left: 18px;
+            margin-top: 6px;
+        }
+
+        li {
+            font-size: 12.5px;
+            margin-bottom: 4px;
+            color: var(--text);
+        }
+
+        /* Competências em Grid Moderno */
+        .grid-competencias {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .card-competencia {
+            background-color: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 10px 14px;
+        }
+
+        .competencia-titulo {
+            font-weight: 600;
+            font-size: 12.5px;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .competencia-valores {
+            font-size: 12.5px;
+            color: var(--text);
+        }
+
+        /* Cursos e Soft Skills */
+        .lista-horizontal-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            list-style: none;
+            padding-left: 0;
+            margin-top: 0;
+        }
+
+        .lista-horizontal-tags li {
+            background-color: var(--bg-light);
+            border: 1px solid var(--border);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: var(--text-dark);
+        }
+
+        /* Configuração de Otimização para Impressão PDF */
+        @media print {
+            body {
+                padding: 0;
+                margin: 0;
+            }
+            .card-competencia, .lista-horizontal-tags li {
+                background-color: #f8fafc !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-main">
+            <h1>Ivan Kleyton Campelo Ferreira</h1>
+            <div class="subtitle">Cientista da Computação em Formação</div>
+        </div>
+        <div class="contato">
+            Paço do Lumiar - MA<br>
+            (98) 9 9197-2950<br>
+            <a href="mailto:ivankleyton12@gmail.com">ivankleyton12@gmail.com</a><br>
+            <a href="https://www.linkedin.com/in/ivankleyon" target="_blank">linkedin.com/in/ivankleyon</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Resumo Profissional</h2>
+        <p>Graduando em Ciência da Computação pela Universidade Federal do Maranhão (UFMA). Experiência sólida em suporte à infraestrutura de TI, administração de sistemas institucionais, gerenciamento de ambientes computacionais, redes e automação de processos administrativos. Desenvolve soluções utilizando linguagens modernas como Python, PHP, JavaScript e frameworks como Next.js, além de manipulação de bancos de dados SQL (PostgreSQL/MySQL). Histórico comprovado em liderança de equipes e melhoria contínua de processos tecnológicos organizacionais.</p>
+    </section>
+
+    <section>
+        <h2>Experiência Profissional</h2>
+        
+        <div class="item-cronologico">
+            <div class="item-header">
+                <span class="cargo-curso">Assistente Administrativo / Suporte de TI</span>
+                <span class="periodo">Outubro de 2022 — Maio de 2025</span>
+            </div>
+            <div class="empresa-instituicao">Tecnews Eireli (Alocado no Centro de Ciências Humanas - UFMA)</div>
+            <ul>
+                <li><strong>Liderança:</strong> Coordenação da equipe de bolsistas do centro durante 2 anos, distribuindo demandas e otimizando rotinas internas.</li>
+                <li><strong>Sistemas e Processos:</strong> Administração e atualização do portal institucional (Plone) e tramitação de processos administrativos complexos via SEI.</li>
+                <li><strong>Infraestrutura e Redes:</strong> Manutenção preventiva e corretiva de hardware/software de laboratórios de informática e suporte à infraestrutura de rede local.</li>
+                <li><strong>Automação:</strong> Desenvolvimento de scripts e pequenas automações para otimização de fluxos e tarefas dos servidores e docentes.</li>
+            </ul>
+        </div>
+
+        <div class="item-cronologico">
+            <div class="item-header">
+                <span class="cargo-curso">Técnico de Informática (Freelancer)</span>
+                <span class="periodo">2015 — Atual</span>
+            </div>
+            <div class="empresa-instituicao">Prestação de Serviços Autônomos</div>
+            <ul>
+                <li>Consultoria técnica para aquisição de ativos de hardware e montagem/manutenção de computadores de alta performance.</li>
+                <li>Configuração de redes domésticas/empiriais estruturadas, implementação de políticas de backup e recuperação de desastres.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Formação Acadêmica</h2>
+        <div class="item-cronologico">
+            <div class="item-header">
+                <span class="cargo-curso">Bacharelado em Ciência da Computação</span>
+                <span class="periodo">Conclusão Prevista: Dezembro de 2027</span>
+            </div>
+            <div class="empresa-instituicao">Universidade Federal do Maranhão (UFMA)</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Competências Técnicas</h2>
+        <div class="grid-competencias">
+            <div class="card-competencia">
+                <div class="competencia-titulo">Desenvolvimento</div>
+                <div class="competencia-valores">Python, PHP, JavaScript, HTML5, CSS3, Next.js</div>
+            </div>
+            <div class="card-competencia">
+                <div class="competencia-titulo">Bancos de Dados</div>
+                <div class="competencia-valores">SQL, PostgreSQL, MySQL</div>
+            </div>
+            <div class="card-competencia">
+                <div class="competencia-titulo">Infraestrutura & Suporte</div>
+                <div class="competencia-valores">Linux, Redes de Computadores, Backup/Recuperação, Administração de Servidores Web</div>
+            </div>
+            <div class="card-competencia">
+                <div class="competencia-titulo">Ferramentas & Metodologias</div>
+                <div class="competencia-valores">Git, GitHub, VS Code, Figma, Trello, Métodos Ágeis</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Cursos & Certificações</h2>
+        <ul class="lista-horizontal-tags">
+            <li>Montagem e Manutenção de Microcomputadores (Microcamp)</li>
+            <li>JavaScript Avançado</li>
+            <li>HTML5 e CSS3</li>
+            <li>Python para Data Science</li>
+            <li>Next.js & React</li>
+            <li>DBA PostgreSQL & MySQL (Em andamento)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Habilidades Interpessoais</h2>
+        <ul class="lista-horizontal-tags">
+            <li>Coordenação de Pessoas</li>
+            <li>Trabalho em Equipe</li>
+            <li>Resolução de Problemas Complexos</li>
+            <li>Comunicação Interpessoal</li>
+            <li>Aprendizagem Contínua</li>
+            <li>Proatividade</li>
+        </ul>
+    </section>
+
+</body>
+</html>
